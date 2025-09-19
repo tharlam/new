@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">Tharlam Academy</title>
+    <meta name="description" content="Tharlam Academy - Blending Buddhist values with modern education in Kathmandu."
+        data-i18n="meta_description">
+    <meta name="keywords" content="Tharlam, Buddhist school, Kathmandu education, modern and spritual education"
+        data-i18n="meta_keywords">
+    <meta name="author" content="Tharlam Academy" data-i18n="meta_author">
+    <link rel="icon" type="image/png" href="loading-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="up.css">
+</head>
+
+<body>
+
+    <!-- Loading Overlay and Bar -->
+    <div id="loading-overlay">
+        <div id="loading-container">
+            <img id="bouncing-logo" src="loading-logo.png" alt="Loading Logo" />
+            <div id="loading-bar-container">
+                <div id="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content (hidden until loading completes) -->
+    <div id="content" style="display: none;">
+
+        <header class="main-header">
+            <nav class="navbar" role="navigation" aria-label="Main navigation">
+                <div class="brand">
+                    <a href="" class="header-logo-link" aria-label="Tharlam Academy Home"
+                        data-i18n-aria-label="header_home_aria_label">
+                        <img src="loading-logo.png" alt="Tharlam Academy Logo" class="logo"
+                            data-i18n-alt="header_logo_alt" />
+                        <div class="text-group">
+                            <h2 data-i18n="header_academy_name"></h2>
+                            <p data-i18n="header_address"></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mobile-tools">
+                    <div class="language-selector-wrapper">
+                        <select class="language-select" id="lang" aria-label="Select Language"
+                            data-i18n-aria-label="lang_select_aria_label">
+                            <option value="en" selected data-i18n="lang_en"></option>
+                            <option value="ne" data-i18n="lang_ne"></option>
+                            <option value="bo" data-i18n="lang_bo"></option>
+                        </select>
+                        <span class="custom-select-arrow"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+
+                    <button class="menu-toggle" aria-expanded="false" aria-controls="navLinks" id="menuToggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="nav-controls" id="navLinks">
+                    <ul class="nav-links-list">
+                        <li><a href="#about" data-i18n="nav_about"></a></li>
+                        <li><a href="#mission" data-i18n="nav_mission_vision"></a></li>
+                        <li><a href="#message" data-i18n="nav_principals_message"></a></li>
+                        <li><a href="#testo" data-i18n="nav_testimonials"></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                                data-i18n="nav_more"> <i class="fas fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#achievents" data-i18n="nav_achievements"></a></li>
+                                <li><a href="#faci" data-i18n="nav_facilities"></a></li>
+                                <li><a href="#sports" data-i18n="nav_sports"></a></li>
+                                <li><a href="#events" data-i18n="nav_event_celebration"></a></li>
+                                <li><a href="#health" data-i18n="nav_health_safety"></a></li>
+                                <li><a href="#gallery" data-i18n="nav_gallery"></a></li>
+                                <li><a href="#supp" data-i18n="nav_support_us"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#faq" data-i18n="nav_faq"></a></li>
+                        <li><a href="#contact" class="nav-contact-link" data-i18n="nav_contact"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Your website content, e.g. the banner slider you shared earlier -->
+        <section class="banner-slider">
+            <div class="slide active">
+                <img src="Banner-1.JPG" alt="Tharlam-Academy" data-i18n-alt="banner_slide1_alt">
+                <div class="slide-caption">
+                    <h3 data-i18n="banner_slide1_title"></h3>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Banner-2.png" alt="Tharlam-Academy" data-i18n-alt="banner_slide2_alt">
+                <div class="slide-caption">
+                    <h3 data-i18n="banner_slide2_title"></h3>
+                </div>
+            </div>
+            <button class="nav-btn prev-btn" aria-label="Previous Slide"
+                data-i18n-aria-label="banner_prev_slide_aria">❮</button>
+            <button class="nav-btn next-btn" aria-label="Next Slide"
+                data-i18n-aria-label="banner_next_slide_aria">❯</button>
+        </section>
+
+
+        <section id="about" class="about-us-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up" data-i18n="section_title"></h2>
+                <div class="about-content-grid">
+                    <div class="about-text" data-aos="fade-left">
+                        <p data-i18n="about_intro_paragraph"></p>
+                        <p data-i18n="about_vision_paragraph"></p>
+                        <div class="about-cta">
+                            <a href="" class="btn primary-btn" data-i18n="about_learn_more_button"></a>
+                        </div>
+                    </div>
+                    <div class="about-image" data-aos="fade-up">
+                        <img src="about-house.png" alt="" class="responsive-image" data-i18n-alt="about_image_alt">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="glance-section">
+            <div class="glance-overlay"></div>
+            <div class="glance-content-wrapper">
+                <h2 class="glance-title" data-i18n="mission_vision_title"></h2>
+                <div class="glance-cards-container">
+                    <div class="glance-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-bullseye glance-icon"></i>
+                        <h3 class="glance-card-title" data-i18n="mission_card_title"></h3>
+                        <p class="glance-card-description" data-i18n="mission_card_desc"></p>
+                    </div>
+
+                    <div class="glance-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-lightbulb glance-icon"></i>
+                        <h3 class="glance-card-title" data-i18n="vision_card_title"></h3>
+                        <p class="glance-card-description" data-i18n="vision_card_desc"></p>
+                    </div>
+
+                    <div class="glance-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-hands-helping glance-icon"></i>
+                        <h3 class="glance-card-title" data-i18n="values_card_title"></h3>
+                        <p class="glance-card-description" data-i18n="values_card_desc"></p>
+                    </div>
+
+                    <div class="glance-card" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-users glance-icon"></i>
+                        <h3 class="glance-card-title" data-i18n="community_card_title"></h3>
+                        <p class="glance-card-description" data-i18n="community_card_desc"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3 data-i18n="footer_about_title"></h3>
+                    <p data-i18n="footer_about_description"></p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 data-i18n="footer_quick_links_title"></h3>
+                    <ul>
+                        <li><a href="about.html" data-i18n="footer_link_admissions"></a></li>
+                        <li><a href="sport.html" data-i18n="footer_link_academics"></a></li>
+                        <li><a href="gallery.html" data-i18n="footer_link_student_life"></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 data-i18n="footer_contact_us_title"></h3>
+
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-i18n="footer_contact_address"></span>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <span data-i18n="footer_contact_phone"></span>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="footer_contact_email"></span>
+                    </p>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3 data-i18n="footer_newsletter_title"></h3>
+                    <p data-i18n="footer_newsletter_description"></p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" aria-label="Your Email Address"
+                            data-i18n-placeholder="footer_newsletter_placeholder" />
+                        <button type="submit" data-i18n="footer_newsletter_subscribe"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright"></p>
+                <p>
+                    <a href="#" data-i18n="footer_privacy_policy"></a> |
+                    <a href="#" data-i18n="footer_terms_of_service"></a>
+                </p>
+            </div>
+        </footer>
+
+
+
+        <a href="#" id="scrollTopBtn" class="scroll-top-btn">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="loading.js"></script>
+        <script src="nav.js"></script>
+        <script src="up.js"></script>
+        <script src="lang.js"></script>
+    </div>
+</body>
+
+</html>

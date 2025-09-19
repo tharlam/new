@@ -1,0 +1,385 @@
+body {
+    background-color: var(--color-primary-dark);
+}
+
+/* --- General Container for Centering Content --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- About Us Section Styles --- */
+.about-us-section {
+    padding: 80px 0;
+    background-color: #e0f2f7;
+}
+
+.section-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title .highlight-blue {
+    color: var(--color-primary-dark);
+}
+
+.about-content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: var(--color-text-medium);
+}
+
+.about-text p strong {
+    font-weight: bold;
+    color: var(--color-text-dark);
+}
+
+.about-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.about-image .responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-light);
+}
+
+.about-cta {
+    margin-top: 0px;
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn {
+    background-color: var(--color-primary-dark);
+    color: white;
+    border: var(--color-primary-dark);
+}
+
+.primary-btn:hover {
+    background-color: var(--color-hover);
+    border-color: var(--color-hover);
+    transform: translateY(-2px);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 32px;
+    }
+
+    .about-content-grid {
+        gap: 30px;
+    }
+
+    .about-text,
+    .about-image {
+        min-width: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us-section {
+        padding: 30px 0;
+    }
+
+    .about-content-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        order: 2;
+    }
+
+    .about-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+    .about-cta {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+}
+
+
+/*mission and vision*/
+.glance-section {
+    position: relative;
+    padding: 40px 20px;
+    color: white;
+    overflow: hidden;
+    /* Corrected image path with quotes for spaces */
+    background: url('Mission-1.jpg') no-repeat center center/cover fixed;
+    text-align: center;
+}
+
+.glance-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 31, 63, 0.7);
+    /* Dark blue overlay (001f3f with 70% opacity) */
+    z-index: 1;
+    /* Sits above background, below content */
+}
+
+.glance-content-wrapper {
+    position: relative;
+    z-index: 2;
+    /* Sits above the overlay */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.glance-title {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 50px;
+    /* Space below title before cards */
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.glance-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100px;
+    /* Length of the underline */
+    height: 4px;
+    background-color: var(--color-text-white);
+    /* Yellow accent color */
+    border-radius: 2px;
+}
+
+.glance-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows cards to wrap on smaller screens */
+    justify-content: center;
+    /* Centers cards in the container */
+    gap: 30px;
+    /* Space between cards */
+}
+
+.glance-card {
+    background-color: var(--color-text-white);
+    /* Slightly transparent white card */
+    color: var(--color-text-dark);
+    /* Dark text on white card */
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-light);
+    /* Subtle shadow for depth */
+    text-align: center;
+    flex: 1 1 calc(25% - 30px);
+    /* Four columns on large screens */
+    min-width: 220px;
+    /* Minimum width before stacking */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glance-card:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: var(--shadow-light);
+    /* More pronounced shadow on hover */
+}
+
+.glance-icon {
+    font-size: 3rem;
+    /* Size of the icon */
+    color: var(--color-primary-dark);
+    /* Primary blue for icons */
+    margin-bottom: 15px;
+}
+
+.glance-card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--color-primary-dark);
+    /* Dark blue for card titles */
+}
+
+.glance-card-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-medium);
+}
+
+
+/* --- Responsive Adjustments for Mission & Vision Section --- */
+
+/* Tablets and smaller desktops (max-width: 992px) */
+@media (max-width: 992px) {
+    .glance-section {
+        padding: 60px 15px;
+    }
+
+    .glance-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .glance-title::after {
+        width: 80px;
+        height: 3px;
+    }
+
+    .glance-card {
+        flex: 1 1 calc(50% - 20px);
+        /* Two columns on tablets */
+        padding: 25px 15px;
+        min-width: 200px;
+    }
+
+    .glance-icon {
+        font-size: 2.5rem;
+    }
+
+    .glance-card-title {
+        font-size: 1.2rem;
+    }
+
+    .glance-card-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .glance-section {
+        height: auto;
+        /* Allow height to adjust to content */
+        padding: 50px 10px;
+        /* The line 'background-attachment: scroll;' has been REMOVED from here */
+    }
+
+    .glance-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .glance-title::after {
+        width: 60px;
+        height: 2px;
+    }
+
+    .glance-cards-container {
+        gap: 20px;
+        /* Reduced gap */
+    }
+
+    .glance-card {
+        flex: 1 1 100%;
+        /* Single column on mobile, ensures it adapts to full width */
+        margin: 0 auto;
+        /* Center individual cards */
+        padding: 20px 15px;
+    }
+
+    .glance-icon {
+        font-size: 2rem;
+    }
+
+    .glance-card-title {
+        font-size: 1.1rem;
+    }
+
+    .glance-card-description {
+        font-size: 0.85rem;
+    }
+}
+
+/* Very small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .glance-section {
+        padding: 40px 10px;
+    }
+
+    .glance-title {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .glance-cards-container {
+        gap: 15px;
+    }
+
+    .glance-card {
+        padding: 18px 10px;
+    }
+
+    .glance-icon {
+        font-size: 1.8rem;
+    }
+
+    .glance-card-title {
+        font-size: 1rem;
+    }
+
+    .glance-card-description {
+        font-size: 0.8rem;
+    }
+}
